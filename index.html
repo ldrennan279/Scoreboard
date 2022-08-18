@@ -6,38 +6,41 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
+    <script src="main.js" defer></script>
     <title>Scorecard</title>
 </head>
 <body>
     <header>Scorecard</header>
     <main class="main-section">    
-        <section class="team-section">
-            <div>
-                Home
-            </div>
-            <div class="home-score score">
-                <p>5</p>
-            </div>
-            <div class="btn-section">  
-                <button>+1</button>
-                <button>+2</button>
-                <button>+3</button>
-            </div>
-        </section>
-        <section class="team-section">
-            <div>
-                Guest
-            </div>
-            <div class="guest-score score">
-                <p>5</p>
-            </div>
-            <div class="btn-section">
-                <button>+1</button>
-                <button>+2</button>
-                <button>+3</button>
-            </div>
-        </section>
+        <div class="interactive-sction">
+            <section class="team-section">
+                <div>
+                    Home
+                </div>
+                <div class="score">
+                    <p class="home_score">0</p>
+                </div>
+                <div class="btn-section">  
+                    <button id="home-btn-plus1">+1</button>
+                    <button id="home-btn-plus2">+2</button>
+                    <button id="home-btn-plus3">+3</button>
+                </div>
+            </section>
+            <section class="team-section">
+                <div>
+                    Guest
+                </div>
+                <div class="score">
+                    <p class="guest_score">0</p>
+                </div>
+                <div class="btn-section">
+                    <button id="guest-btn-plus1">+1</button>
+                    <button id="guest-btn-plus2">+2</button>
+                    <button id="guest-btn-plus3">+3</button>
+                </div>
+            </section>
+        </div>
+        <button id="reset-btn">Reset</button>
     </main>
 </body>
 </html>
